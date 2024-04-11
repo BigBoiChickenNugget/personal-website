@@ -8,46 +8,40 @@
 <body>
 	<div>
 			<a href="projects.html">&lt&lt projects</a>
-			<h1 style="position: relative; top: 2rem;">Get a Grip: Surgical Tool Sterilization Design</h1>
+			<h1 style="position: relative; top: 2rem;">Revenge of the Recylcing System: Autonomous waste dispensing and sorting system</h1>
 			<h2 style="position: relative; top: 2rem">Project Narratives & Objectives</h2>
 			<p style="position: relative; top: 1rem;">
-				This project required us to create a system that would allow a robotic arm to sterilize surgical instruments. This consisted of two parts: the actual program which
-				controlled the arm (coding subteam), and the model in which our chosen tool would lie (modelling subteam). I was a member of the modelling subteam. Some of the design
-				objectives we came up with were:
+				In this project, I, as a member of the coding subteam, was responsible with my partner with designing and creating a model program that controls a QArm and QBot with
+				dispensing and sorting waste. The project objectives are as follows:
 				<ul>
-					<li>Affordability: Since this project's purpose was to be used in a professional setting, it should be affordable by our target audience which would be hospitals.</li>
-					<li>Durability: The material should not break apart inside the autoclave due to heat or pressure.</li>
-					<li>Accuracy: The arm should accurately be able to transport tools.</li>
+					<li>Computation: Create a program that sorts dispensed waste in the quanser environment.</li>
+					<li>Modelling: Design and create a system for storing the waste with an actuator.</li>
+					<li>Hardware (both together): Implement both the computation and modelling sections together in a live demo in a physical environment.</li>
 				</ul>
 			</p>
 			<p style="position: relative; top: 1rem;">
-				The final result of this project consisted of a fully functioning program as well as a 3D printed design of the container in which our tool would be held. We decided
-				on an open design for the sterilization cage with the tool hanging off the side but also secured on the inside, as we believed that this would result in optimal steam
-				flow for sterilization. Our final Inventor assembly with the tool inside the model can be seen below:
+				The final result of this project was a program that managed to accurately and properly dispense waste with minimal bugs and errors. The following is my flowchart
+				for the transfer function which controlled and oversaw the transfer of waste:
 			</p>
-			<img src="images/P2-model.png" height="300" width="500">
+			<img src="images/transfer-P3.png" height="800" width="600">
 			<p style="position: relative; top: 0.5rem;">
-				My role, as a member of the modelling subteam, was to come up with this design as well as go through the design process for it in Inventor. Both of these tasks were performed
-				in conjunction with my partner. As a coordinator for this project, I was also responsible for tracking meetings and taking notes during meetings. These were mainly for the
-				modelling subteam meetings. For this project, I also had to perform an MPI analysis and pick ideal materials in a scenario that would reduce cost while maximizing tensile strength.
-				My full graph generated from GRANTA can be seen below:
+				My role, within this project, was developing and writing the code. Namely, my role was developing a system for accurately determining the type of bin present
+				and having the bot line following technology work as planned.
 			</p>
-			<img src="images/P2-graph.png" height="500" width="850">
 			<h2 style="position: relative; top: 2rem;">Reflection</h2>
 			<p style="position: relative; top: 1rem;">
-				In retrospect, our model only considered two main factors: minimizing material used and allowing maximum airflow. This is why we used oblique grates and had an open top.
-				This is also why we had the tool hanging off the side rather than actually secured all around. This may have resulted in a shape that may be more vulnerable to falling out,
-				so it may have been more beneficial to have a closed top which secures the tool more safely. Moreover, one of the problems was this tool being prone to falling off the
-				top of the design. A method that could have fixed this while still mantaining minimal material usage could have been the usage of a cap-like tool that lies over the
-				top of the cylinder.
+				Our code had some flaws. Most notably, during the hardware simulation, I realized that the speed of the bot causes the bot to lose track of the line and fall off path.
+				Moreover, in the simulated environment, the bot would sometimes fail to accurately measure the distance to the bin. While, at the time, I assumed that there were some
+				errors in the environment itself given that the code itself makes sense, in retrospect, if I slowed down the speed of the bot in the simulation, perhaps it would have been
+				a lot more accurate.
 			</p>
 			<h2 style="position: relative; top: 2rem;">Skills</h2>
 			<p style="position: relative; top: 1rem;">
-				Through this project, I used both GRANTA and Autodesk Inventor extensively. I also learned more about the engineering process, so I am a lot more comfortable with these
-				engineering projects after this specific project. This project also introduced a subteam model, which would be more in line with what I may experience in the industry.
-				The link below will take you the final submitted design report:
+				The main tool in this project was Python. Moreover, for this project, I chose to break away from my usual choice of neovim and chose instead to learn emacs. While this
+				proved to be a challenge at first given my reliance on vim keybindings after years of use, I eventually managed to create a workflow that was almost as efficient as 
+				my workflow using vim.
 			</p>
-			<h3 style="position: relative; top 2rem;"><a href="reports/project1.pdf">DESIGN REPORT</a></h3>
+			<h3 style="position: relative; top 2rem;"><a href="reports/project3.pdf">DESIGN REPORT</a></h3>
 	</div>
 </body>
 </html>
